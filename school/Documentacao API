@@ -1,0 +1,42 @@
+Esse projeto conta com rotas que se diferenciará pelo tipo de requisição: GET,POST, PUT ou DELETE
+caso deseje deletar algum item deverá ser passado a rota com a barra e o id desejado para realizar a remoção
+
+esse projeto está utilizando o banco de dados PostgreSql com os seguintes parâmetros de conexão:
+
+    'NAME': 'school',
+    'USER': 'postgres',
+    'PASSWORD':'root',
+    'HOST': 'localhost',
+    'PORT': '5432',
+
+o formulário no Django admin recebe os parâmetros:
+    'nome'
+    'email'
+    'telefone'
+    'descricao'
+
+e os salvam na tabela ModeloForm
+
+rotas:
+
+admin/
+ - professor$
+ - professor/([0-9]+)$
+ - aluno$
+ - aluno/([0-9]+)$
+ - disciplina$
+ - disciplina/([0-9]+)$
+ - disciplinaAluno$
+ - disciplinaAluno/([0-9]+)$
+ - atividade$
+ - atividade/([0-9]+)$
+ - atividadeAluno$
+ - atividadeAluno/([0-9]+)$
+ - planoAula$
+ - planoAula/([0-9]+)$
+ - frequencia$
+ - frequencia/([0-9]+)$
+ - frequenciaAluno$
+ - frequenciaAluno/([0-9]+)$
+ - professor/([0-9]+)/disciplinas$
+ - disciplinas/([0-9]+)/alunos$
